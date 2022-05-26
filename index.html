@@ -107,9 +107,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="card left-pane first">
+                  <div class="card first">
                     <div class="card-body">
-                      <div class="text-wrapper">
+                      <div class="text-wrapper" style="text-align: center;">
                         <h2 class="card-title">
                           VODNÍ DÝMKY
                         </h2>
@@ -120,9 +120,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card left-pane">
+                  <div class="card">
                     <div class="card-body">
-                      <div class="text-wrapper">
+                      <div class="text-wrapper" style="text-align: center;">
                         <h2 class="card-title">
                           TABÁKY
                         </h2>
@@ -137,27 +137,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card left-pane">
-                    <div class="card-body">
-                      <div class="splide" style="width: 150px">
+                      <div class="splide" style="width:150px;">
                         <div class="splide__track">
                           <ul class="splide__list" style="height: 150px">
                             <li class="splide__slide">
-                              <img src="images/alpha.png" alt="" />
+                              <img src="images/alpha.png" class="splide__img" alt="" />
                             </li>
                             <li class="splide__slide">
-                              <img src="images/geometry.png" alt="" />
+                              <img src="images/geometry.png" class="splide__img" alt="" />
                             </li>
                             <li class="splide__slide">
-                              <img src="images/alpha.png" alt="" />
+                              <img src="images/alpha.png" class="splide__img" alt="" />
                             </li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
         </div>
@@ -242,14 +238,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h2>Kontaktujte nás</h2>
+              <h2>ZAREGISTROVAT OBJEDNÁVKU</h2>
               <hr class="mb-3" />
               <ul>
                 <li>
                   <label for="name">Jméno</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control-input"
                     name="name"
                     required
                   />
@@ -258,22 +254,27 @@
                   <label for="email">E-mail</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control-input"
                     name="email"
                     required
                   />
                 </li>
                 <li>
-                  <label for="time">Čas</label>
-                  <input type="datetime-local" name="time" />
+                  <label for="time">Datum</label>
+                  <input type="datetime-local" class="form-control-select" style="width: 50%;" name="time" />
                 </li>
                 <li>
                   <label for="text">Text</label>
-                  <textarea name="text" class="form-control"></textarea>
+                  <textarea name="text" class="form-control-textarea"></textarea>
                 </li>
                 <li>
                   <label for="balicek">Balíček</label>
-                  <textarea name="balicek" class="form-control"></textarea>
+                      <select name="balicek" id="" class="form-control-select" required>
+                          <option value="0">ZÁKLADNÍ</option>
+                          <option value="1">CLASSIC</option>
+                          <option value="2">PREMIUM</option>
+                          <option value="3">VLASTNÍ</option>
+                      </select>
                 </li>
                 <li></li>
               </ul>
@@ -281,7 +282,7 @@
               <div style="display: flex; justify-content: space-between">
                 <input
                   type="submit"
-                  class="btn btn-confirm"
+                  class="form-control-submit-button"
                   name="poslat"
                   value="Odeslat"
                 />

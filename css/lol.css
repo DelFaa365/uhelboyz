@@ -26,7 +26,7 @@ html {
 
 body, p {
 	color: #f1f1f8; 
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	font: 400 1.4rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
@@ -250,6 +250,11 @@ a.white {
 	font-weight: 700;
 }
 
+
+label {
+	font: 700 1.25rem/1.75rem "Montserrat", sans-serif;
+	text-transform: uppercase;
+}
 .form-control-input,
 .form-control-select {
 	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
@@ -259,7 +264,7 @@ a.white {
 	padding-left: 1.3125rem;
 	border: 1px solid #9791ae;
 	border-radius: 0.25rem;
-	background-color: #413d52;
+	background-color: rgba(65, 61, 82, 0.226);
 	color: #f1f1f8;
 	font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
 	transition: all 0.2s ease;
@@ -313,7 +318,7 @@ select::-ms-expand {
 	padding-left: 1.3125rem;
 	border: 1px solid #9791ae;
 	border-radius: 0.25rem;
-	background-color: #413d52;
+	background-color: rgba(65, 61, 82, 0.226);
 	color: #f1f1f8;
 	font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
 	transition: all 0.2s ease;
@@ -352,6 +357,7 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.125rem;
+	margin-bottom: 1rem;
 	border: 1px solid #3e3d3f;
 	border-radius: 1.5rem;
 	background-color: #3e3d3f;
@@ -830,9 +836,8 @@ input[type='checkbox'] {
 	padding-bottom: 0;
 }
 .card-body > p {
-	font-size: 1.05rem;
 	margin-top: 1.7rem;
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	font: 900 1.8rem "Open Sans", sans-serif;
 }
 .card-body > h2 {
 	font: 900 1.8rem "Open Sans", sans-serif;
@@ -945,33 +950,27 @@ input[type='checkbox'] {
 .tabs .card .card-icon .fas,
 .tabs .card .card-icon .far {
 	color: #fff;
-	font-size: 1.75rem;
+	font-size: 4rem;
 	line-height: 3.5rem;
 }
 
-.tabs #tab-1 .card.left-pane .text-wrapper {
-	display: inline-block;
-	width: 75%;
+.tabs #tab-1 .card-body .text-wrapper {
+	text-align: center;
 }
+
 
 .tabs #tab-1 .card.left-pane .card-icon {
 	float: left;
 	margin-right: 1rem;
 }
 
-.tabs #tab-1 img {
+.splide__img {
 	display: block;
 	margin: 2rem auto 3rem auto;
 	height: auto;
 	max-height: 80%;
 }
 
-
-
-.tabs #tab-1 .card.right-pane .text-wrapper {
-	display: inline-block;
-	width: 75%;
-}
 
 .tabs #tab-1 .card.right-pane .card-icon {
 	margin-right: 1rem;
@@ -1672,7 +1671,7 @@ a:hover.back-to-top {
 	}
 
 	.tabs #tab-1 .card.left-pane .text-wrapper {
-		width: 85%;
+		width: 100%;
 	}
 
 	.tabs #tab-2 img {
@@ -1826,7 +1825,7 @@ a:hover.back-to-top {
 
 	/* Features */
 	.tabs .card-body {
-		padding: 1rem 0 1.5rem 0;
+		padding: 6rem 0 1.5rem 0;
 	}
 	
 	.tabs #tab-1 .card.left-pane {
@@ -1835,7 +1834,7 @@ a:hover.back-to-top {
 
 	.tabs #tab-1 .card.left-pane .text-wrapper,
 	.tabs #tab-1 .card.right-pane .text-wrapper {
-		width: 68%;
+		text-align: center;
 	}
 
 	.tabs #tab-1 .card.left-pane .card-icon {
@@ -1966,9 +1965,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 
-	.splide {
-		margin-left: 80%;
-	}
 	/* end of extra pages */
 }
 /* end of min-width width 992px */
@@ -1977,9 +1973,6 @@ a:hover.back-to-top {
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
 
-	.splide {
-		margin-left: 80%;
-	}
 	
 	/* Navigation */
 	.navbar-custom {
@@ -2026,7 +2019,7 @@ a:hover.back-to-top {
 
 	.tabs #tab-1 .card.left-pane .text-wrapper,
 	.tabs #tab-1 .card.right-pane .text-wrapper {
-		width: 73%;
+		text-align: center;
 	}
 
 	.tabs #tab-1 img {
